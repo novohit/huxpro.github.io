@@ -58,11 +58,18 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-disqus_username: hux
-
 # Netease settings
-netease_comment: false
+# netease_comment: false
+
+# # Disqus settings
+# disqus_username: hux
+
+# utteranc settings
+utteranc:
+  enable: true   
+  repo: novohit/comment
+  issue-term: title
+  theme: github-light
 
 # Analytics settings
 # Baidu Analytics
