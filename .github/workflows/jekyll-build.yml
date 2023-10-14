@@ -1,0 +1,30 @@
+name: Jekyll Build
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+    branches:
+      - master
+      - dev
+
+jobs:
+  jekyll-build-pages:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: 'dev'
+    - name: Jekyll build
+      uses: actions/jekyll-build-pages@v1
+    - name: Push to novohit.github.io repo
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: git@github.com:novohit/novohit.github.io.git
+        SQUASH_HISTORY: "false"
+        BRANCH: master
+        FOLDER: ./_site
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
