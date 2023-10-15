@@ -93,8 +93,27 @@
 </header>
 {% endif %}
 
+{% assign background_image_url = '' %}
+
+{% comment %} 检查 page 对象中的 header-img-remote 属性 {% endcomment %}
+{% if page.header-img-remote %}
+  {% assign background_image_url = page.header-img-remote %}
+{% else %}
+  {% comment %} 如果 page 对象中的 header-img-remote 属性不存在，则继续检查 site 对象中的 header-img-remote 属性 {% endcomment %}
+  {% if site.header-img-remote %}
+    {% assign background_image_url = site.header-img-remote %}
+  {% else %}
+    {% comment %} 如果两个对象中的 header-img-remote 属性都不存在，则拼接本地的图片 URL {% endcomment %}
+    {% if page.header-img %}
+      {% assign background_image_url = site.baseurl | append: '/' | append: page.header-img %}
+    {% else %}
+      {% assign background_image_url = site.baseurl | append: '/' | append: site.header-img %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
 {% if include.type == 'page' %}
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header" style="background-image: url('{{ background_image_url }}')">
   <div class="header-mask"></div>
   <div class="container">
     <div class="row">
