@@ -1,11 +1,11 @@
 # Site settings
-title: Novo Blog
-SEOTitle: Novohit | Novo Blog
+title: Novo
+SEOTitle: Novo | Novohit
 header-img: img/home-bg.jpg
 email: huxpro@gmail.com
 description: "embrace open source"
 keyword: "novohit, novo, @novohit, 博客, 个人网站, 互联网, Web, Java, JavaScript, React, React Native, 后端, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
+url: "https://localhost:4000" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -14,7 +14,7 @@ future: true
 # SNS settings
 # weibo_username: huxpro
 github_username: novohit
-zhihu_username: zzzzzwx-78
+# zhihu_username: zzzzzwx-78
 RSS: true
 # twitter_username: huxpro
 #facebook_username:  huxpro
