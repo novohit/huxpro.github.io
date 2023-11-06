@@ -7,7 +7,7 @@ header-img: "img/post-bg-2023.jpg"
 tags: [网络, 代理]
 ---
 
-本文仅做技术分享，请勿使用服务器做违法行为。
+> 本文仅做技术分享，请勿使用服务器做违法行为。
 
 [阿里云高校计划](https://university.aliyun.com/?spm=5176.28508143.J_4VYgf18xNlTAyFFbOuOQe.50.73b2154aoIrBI2&scm=20140722.M_10076475._.V_1)，每年 300 无门槛优惠券。
 
@@ -65,9 +65,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
 ## 搭建节点
 
-直接看视频从 5分钟开始 https://www.youtube.com/watch?v=SpxTFes1B8U
+直接看视频从 5分钟开始 [https://www.youtube.com/watch?v=SpxTFes1B8U](https://www.youtube.com/watch?v=SpxTFes1B8U)
 
-访问面板 404 page not found 问题，是因为根目录变了
+1. 节点的端口记得也要在阿里云设置开放
+
+2. 访问面板 404 page not found 问题，是因为根目录变了
 
 可以用 `x-ui` 命令查看根目录
 
