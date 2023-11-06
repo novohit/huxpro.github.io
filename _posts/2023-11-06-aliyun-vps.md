@@ -9,9 +9,7 @@ tags: [网络, 代理]
 
 本文仅做技术分享，请勿使用服务器做违法行为。
 
-阿里云高校计划，每年 300 无门槛优惠券。
-
-https://university.aliyun.com/?spm=5176.28508143.J_4VYgf18xNlTAyFFbOuOQe.50.73b2154aoIrBI2&scm=20140722.M_10076475._.V_1
+[阿里云高校计划](https://university.aliyun.com/?spm=5176.28508143.J_4VYgf18xNlTAyFFbOuOQe.50.73b2154aoIrBI2&scm=20140722.M_10076475._.V_1)，每年 300 无门槛优惠券。
 
 
 
@@ -29,7 +27,7 @@ https://university.aliyun.com/?spm=5176.28508143.J_4VYgf18xNlTAyFFbOuOQe.50.73b2
 
 ![image-20231106130853031](https://zwx-images-1305338888.cos.ap-guangzhou.myqcloud.com/img/2023/11/06/image-20231106130853031.png)
 
-连接上后，使用一键重装脚本 https://github.com/veip007/dd
+连接上后，使用一键重装脚本 [https://github.com/veip007/dd](https://github.com/veip007/dd)
 
 这里贴出命令：
 
@@ -53,7 +51,7 @@ wget -N --no-check-certificate https://down.vpsaff.net/linux/dd/network-reinstal
 
 ## 搭建 x-ui 面板
 
-https://github.com/vaxilu/x-ui
+[https://github.com/vaxilu/x-ui](https://github.com/vaxilu/x-ui)
 
 这里贴出命令
 
